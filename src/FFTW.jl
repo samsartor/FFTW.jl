@@ -13,6 +13,7 @@ import AbstractFFTs: Plan, ScaledPlan,
                      plan_inv, normalization
 
 export dct, idct, dct!, idct!, plan_dct, plan_idct, plan_dct!, plan_idct!
+export dst, idst, dst!, idst!, plan_dst, plan_idst, plan_dst!, plan_idst!
 
 include("providers.jl")
 
@@ -68,6 +69,7 @@ end
 
 include("fft.jl")
 include("dct.jl")
+include("dst.jl")
 
 include("precompile.jl")
 _precompile_()
